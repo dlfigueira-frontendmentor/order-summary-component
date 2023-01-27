@@ -28,8 +28,6 @@ export default {
   background-repeat: no-repeat;
   background-color: $pale_blue;
   background-size: 100% auto;
-  font-family: "Red Hat Display", serif;
-  font-size: 1rem;
 }
 
 @media only screen and (min-width: 1440px) {
