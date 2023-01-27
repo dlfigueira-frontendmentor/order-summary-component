@@ -30,7 +30,7 @@ export default {
   background-size: 100% auto;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 376px) {
   #app {
     background-image: url("@/assets/pattern-background-desktop.svg");
   }

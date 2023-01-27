@@ -13,7 +13,7 @@
           any any device anywhere you like!
         </p>
       </div>
-      <div class="padding-sides-1_5rem">
+      <div class="padding-sides">
         <div class="plan-selection-container">
           <div class="plan-container">
             <img
@@ -45,9 +45,15 @@ export default {
 </script>
 
 <style lang="scss">
-.padding-sides-1_5rem {
+.padding-sides {
   width: 100%;
   padding: 0 1.5rem;
+}
+
+@media only screen and (min-width: 376px) {
+  .padding-sides {
+    padding: 0 3rem;
+  }
 }
 </style>
 
@@ -106,6 +112,7 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
 .plan-container {
@@ -158,6 +165,7 @@ export default {
 }
 
 .change-plan-link:hover {
+  text-decoration-line: none;
 }
 
 .action-container {
@@ -200,5 +208,23 @@ export default {
 
 .cancel-link:hover {
   color: $dark_blue;
+}
+
+@media only screen and (min-width: 376px) {
+  .main-container {
+    max-width: 26.6875rem;
+  }
+
+  .info-container {
+    margin: 3rem 3rem 1.25rem 3rem;
+  }
+
+  .plan-selection-container {
+    padding: 1.5rem;
+  }
+
+  .action-container {
+    padding: 0 3rem;
+  }
 }
 </style>
